@@ -1,7 +1,19 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "Allow Voice to Text Tutorial to access the microphone",
+          "speechRecognitionPermission": "Allow Voice to Text Tutorial to securely recognize user speech"
+        }
+      ],
+      "expo-router"
+    ],
     "name": "projetIa2024",
     "slug": "projetIa2024",
+    
+
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,17 +26,28 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.projetIa"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      
+    },
+    "extra": {
+      "GROQ_API_KEY": "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",
+      "eas": {
+        "projectId": "b40696e4-c8ed-4884-87ee-7444b91e8376"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.remipra.projetIa2024"
     }
   }
 }
