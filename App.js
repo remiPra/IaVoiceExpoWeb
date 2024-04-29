@@ -16,7 +16,7 @@ export default function App() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [voice, setVoice] = useState(null);
-
+    
   useEffect(() => {
     (async () => {
       await Speech.speak('Bonjour, je suis prêt à discuter avec vous.', { language: 'fr' });

@@ -39,12 +39,12 @@ yarn-error.*
 
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# dependencies 
 node_modules/
 
 # Expo
 .expo/
-dist/
+
 web-build/
 
 # Native
